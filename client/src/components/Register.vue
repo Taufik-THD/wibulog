@@ -61,7 +61,7 @@ export default {
       this.$router.push('/')
     },
     register () {
-      if (this.validation == true && this.checkSame == true && this.registerData.password.length != 0) {
+      if (this.validation == true && this.checkPassword == true && this.registerData.password.length != 0) {
 
         const register = {
           username: this.registerData.username,
@@ -74,7 +74,7 @@ export default {
         } else {
           axios({
             method: 'post',
-            url: 'http://localhost:3000/users/register',
+            url: 'http://35.240.214.13 /users/register',
             data: register
           }).then((response) => {
             this.registerData.username = ''

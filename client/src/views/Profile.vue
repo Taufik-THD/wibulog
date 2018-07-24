@@ -1,20 +1,20 @@
 <template>
   <div class="home">
-    <Header/>
-    <Add/>
+    <Profile />
+    <Sidenav />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Add from '@/components/Add.vue'
-import Header from '@/components/Header.vue'
+import Profile from '@/components/Profile.vue'
+import Sidenav from '@/components/Sidenav.vue'
 
 export default {
   name: 'home',
   components: {
-    Add,
-    Header
+    Profile,
+    Sidenav
   }
 }
 </script>

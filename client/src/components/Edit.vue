@@ -59,7 +59,7 @@ export default {
 
       axios({
         method: 'post',
-        url: 'http://localhost:3000/article/edit',
+        url: 'http://35.240.214.13 /article/edit',
         data: data
       }).then(response => {
         this.$store.dispatch('openDetail', response.data[0])

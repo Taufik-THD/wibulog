@@ -99,7 +99,7 @@ export default {
 
       axios({
         method: 'post',
-        url: 'http://localhost:3000/users',
+        url: 'http://35.240.214.13 /users',
         data: userData
       }).then(response => {
         this.$store.dispatch('profileInfo', response.data.userInfo)
@@ -120,7 +120,7 @@ export default {
       this.$router.push('add')
     },
     profile () {
-      // this.$router.push('profile')
+      this.$router.push('profile')
     },
     logout () {
       swal("Are you sure want to logout?", {
@@ -149,11 +149,12 @@ export default {
     top: 0;
     left: 0;
     overflow-x: hidden;
+    overflow-y: hidden;
     padding-top: 20px;
 }
 
 nav {
-    width: 100%;
+    width: 80%;
     height: 56px;
 }
 
@@ -170,7 +171,7 @@ nav {
 }
 
 .main {
-    margin-left: 200px;
+    margin-left: 190px;
 }
 
 @media screen and (max-height: 450px) {

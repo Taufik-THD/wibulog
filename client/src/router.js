@@ -5,6 +5,7 @@ import Register from './views/Register.vue'
 import Add from './views/Add.vue'
 import Detail from './views/Detail.vue'
 import Edit from './views/Edit.vue'
+import Profile from './views/Profile.vue'
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/edit',
       name: 'edit',
       component: Edit
+    },
+    {
+      path: '/profile',
+      name: 'profile',
+      component: Profile
     }
   ]
 })
