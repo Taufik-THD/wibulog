@@ -63,7 +63,7 @@ export default {
 
       axios({
         method: 'post',
-        url: 'http://35.240.214.13 /article',
+        url: 'http://35.240.155.222/article',
         data: {
           token: token,
           article: articleData

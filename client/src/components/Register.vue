@@ -74,7 +74,7 @@ export default {
         } else {
           axios({
             method: 'post',
-            url: 'http://35.240.214.13 /users/register',
+            url: 'http://35.240.155.222/users/register',
             data: register
           }).then((response) => {
             this.registerData.username = ''

@@ -59,7 +59,7 @@ export default new Vuex.Store({
     getAllArticle ({ commit }, payload) {
       axios({
         method: 'get',
-        url: 'http://35.240.214.13 /article'
+        url: 'http://35.240.155.222/article'
       }).then(response => {
         commit('articles', response.data)
       }).catch(err => {
@@ -70,7 +70,7 @@ export default new Vuex.Store({
       const id = localStorage.getItem('authorization').split('*#$_.')[1]
       axios({
         method: 'get',
-        url: `http://35.240.214.13 /users/${id}`
+        url: `http://35.240.155.222/users/${id}`
       }).then(response => {
         commit('userInfo', response.data[0])
       }).catch(err => {

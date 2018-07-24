@@ -128,7 +128,7 @@ export default {
         if (accept) {
           axios({
             method: 'delete',
-            url: `http://35.240.214.13 /article/${id}`
+            url: `http://35.240.155.222/article/${id}`
           }).then(response => {
             this.getAllArticle()
             this.$router.push('/')
